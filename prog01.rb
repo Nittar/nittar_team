@@ -39,8 +39,10 @@ frame[0][1] = 'Y'
 for x in 0..79 do
 ###
 ### 分担2
-  y = f(x)
-  frame[24-y][x] = '*'
+  yh = (f(x) - f(0))/f(79)
+  yt = f(0)
+  y = 24 - 24 * (yh + yt)
+  frame[y][x] = '*'
 ###
 end
 
