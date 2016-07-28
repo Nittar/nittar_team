@@ -41,6 +41,8 @@ for i in 10..10+a-1 do
   j = j + 1
   i = i + 1
 end
+###
+
 
 # draw graph
 for x in 0..79 do
