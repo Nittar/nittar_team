@@ -30,10 +30,17 @@ frame[23][78] = 'X'
 # Y label
 frame[0][1] = 'Y'
 
-# draw func
-###
 ### 分担3
-###
+# draw func
+frame[0][8] = "y"
+frame[0][9] = "="
+a= $func.split(//u).length
+j = 0
+for i in 10..10+a-1 do
+  frame[0][i] = $func[j]
+  j = j + 1
+  i = i + 1
+end
 
 # draw graph
 for x in 0..79 do
