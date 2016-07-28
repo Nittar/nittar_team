@@ -39,7 +39,8 @@ frame[0][1] = 'Y'
 for x in 0..79 do
 ###
 ### 分担2
-  frame[24-f(x)][x] = '*'
+  y = f(x)
+  frame[24-y][x] = '*'
 ###
 end
 
