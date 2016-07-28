@@ -39,6 +39,7 @@ frame[0][1] = 'Y'
 for x in 0..79 do
 ###
 ### 分担2
+  frame[y][x] = "*"
 ###
 end
 
