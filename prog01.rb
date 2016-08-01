@@ -48,9 +48,11 @@ end
 for x in 0..79 do
 ###
 ### 分担2
-  yh = (f(x) - f(0))/f(79)
-  yt = f(0)
-  y = 24 - 24 * (yh + yt)
+  yh1 = 24 * (f(x) - f(0))/(f(79) - f(0))
+##  a = 24 * (f(x) - f(0)) / x
+##  yh = yh1 * a / 24 
+  yt = 24 * f(0)
+  y = 24 - (yh + yt)
   frame[y][x] = '*'
 ###
 end
